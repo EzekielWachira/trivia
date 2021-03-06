@@ -29,8 +29,8 @@
         android:label="fragment_game_end"
         tools:layout="@layout/fragment_game_end" >
         <action
-            android:id="@+id/action_gameEndFragment_to_levelFragment"
-            app:destination="@id/levelFragment" />
+            android:id="@+id/action_gameEndFragment_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -40,5 +40,17 @@
         <action
             android:id="@+id/action_gameFragment_to_gameEndFragment"
             app:destination="@id/gameEndFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameLostFragment"
+            app:destination="@id/gameLostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameLostFragment"
+        android:name="com.ezzy.trivia.ui.GameLostFragment"
+        android:label="fragment_game_lost"
+        tools:layout="@layout/fragment_game_lost" >
+        <action
+            android:id="@+id/action_gameLostFragment_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
 </navigation>
