@@ -10,6 +10,9 @@
     <color name="dark_grey">#1E1E1E</color>
     <color name="light_grey">#2B2B2B</color>
     <color name="light_green">#41F16D</color>
+    <color name="green">#3E7A47</color>
+    <color name="light_blue">#2AACCC</color>
+    <color name="blue">#1771A1</color>
     <color name="start_color">#FF9800</color>
     <color name="end_color">#FF5722</color>
 </resources>

@@ -5,10 +5,54 @@
     android:layout_height="match_parent"
     tools:context=".ui.StartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/light_grey"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_category"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bangers"
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:padding=""
+                android:rowCount="8">
+
+                <LinearLayout
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:background="@color/green"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Hello"/>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
 
 </FrameLayout>
