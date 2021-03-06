@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="splash_intro">Test your IQ with how well you know your world</string>
+</resources>
